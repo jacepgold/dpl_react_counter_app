@@ -4,22 +4,20 @@ import './App.css';
 
 class App extends Component {
 
-  // New way of doing it state
-  state = { value: 0, }
-
+  // Old way of creating state, but not wrong
   constructor(props) {
-    super(props);
+    super(props); // Inherit props
+    this.state = { value: 0 } // Create data in state
+    this.inc = this.inc.bind(this);
     this.dec = this.dec.bind(this);
   }
-  
-  inc = () => {
-    debugger
-    this.setState({ value: this.state.value + 1, })
+
+  inc() {
+    this.setState({ value: this.state.value + 1, });
   }
 
   dec() {
-    debugger
-    this.setState({ value: this.state.value - 1, })
+    this.setState({ value: this.state.value - 1, });
   }
 
   render() {
