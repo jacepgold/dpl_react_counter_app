@@ -13,8 +13,8 @@ class Counter extends React.Component {
   }
 
   render() {
-    const { name, } = this.props;
-    const { value } = this.state;
+    const { name, } = this.props; // This gets the data in the props
+    const { value } = this.state; // This gets the current state of the app
     return(
       <div style={{ backgroundColor: name, color: 'white', }}>
         <p>{ name } counter</p>

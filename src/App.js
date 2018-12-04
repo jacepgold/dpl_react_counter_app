@@ -8,7 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Counter Example</h1>
+        { /* Each <Counter /> is a new instance of the class */ }
         <Counter name="red" />
+        { /* name="something" = a prop to send data to it */ }
         <Counter name="green" />
         <Counter name="blue" />
         <Counter name="purple" />
