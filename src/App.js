@@ -8,7 +8,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Counter Example</h1>
-        <Counter />
+        <Counter name="red" />
+        <Counter name="green" />
+        <Counter name="blue" />
+        <Counter name="purple" />
       </div>
     );
   }
